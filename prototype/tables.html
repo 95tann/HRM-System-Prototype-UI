@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 490 - Recreation USA HRM System</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+      <link href="assets/css/main-style.css" rel="stylesheet" />
+
+    <!-- Page-Level CSS -->
+    <link href="assets/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--  wrapper -->
+    <div id="wrapper">
+        <!-- navbar top -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+            <!-- navbar-header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo3.png" alt="" />
+                </a>
+            </div>
+            <!-- end navbar-header -->
+            <!-- navbar-top-links -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- main dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="top-label label label-danger">3</span><i class="fa fa-envelope fa-3x"></i>
+                    </a>
+                    <!-- dropdown-messages -->
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong><span class=" label label-danger">Carl Schmidt</span></strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Need status update on Sales and Marketing Q4 strategy...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong><span class=" label label-info">Steven McFadden</span></strong>
+                                    <span class="pull-right text-muted">
+                                        <em>2 days ago</em>
+                                    </span>
+                                </div>
+                                <div>Please re-schedule production times for employees working on dirt bikes...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong><span class=" label label-success">Lauren Fisher</span></strong>
+                                    <span class="pull-right text-muted">
+                                        <em>1 Week ago</em>
+                                    </span>
+                                </div>
+                                <div>Complete mandatory online security training by next week...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end dropdown-messages -->
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="top-label label label-success">4</span>  <i class="fa fa-tasks fa-3x"></i>
+                    </a>
+                    <!-- dropdown tasks -->
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Employee Information</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Request for Proposal</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Quarterly Team Feedback</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>New Employee Training</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end dropdown-tasks -->
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="top-label label label-warning">5</span>  <i class="fa fa-bell fa-3x"></i>
+                    </a>
+                    <!-- dropdown alerts-->
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i>2 New Comments
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i>10 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i>4 Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i>1 New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end dropdown-alerts -->
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-3x"></i>
+                    </a>
+                    <!-- dropdown user-->
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                        </li>
+                    </ul>
+                    <!-- end dropdown-user -->
+                </li>
+                <!-- end main dropdown -->
+            </ul>
+            <!-- end navbar-top-links -->
+
+        </nav>
+        <!-- end navbar top -->
+
+        <!-- navbar side -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <!-- sidebar-collapse -->
+            <div class="sidebar-collapse">
+                <!-- side-menu -->
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <!-- user image section-->
+                        <div class="user-section">
+                            <div class="user-section-inner">
+                                <img src="assets/img/user.jpg" alt="">
+                            </div>
+                            <div class="user-info">
+                                <div>Jim<strong> Specter</strong></div>
+                                <div class="user-text-online">
+                                    <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
+                                </div>
+                            </div>
+                        </div>
+                        <!--end user image section-->
+                    </li>
+                    <li class="sidebar-search">
+                        <!-- search section-->
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <!--end search section-->
+                    </li>
+                    <li class="selected">
+                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+                    </li>
+					<li>
+                        <a href="tables.html"><i class="fa fa-table fa-fw"></i>Employee Records</a>
+                    </li>
+					<li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>Personal<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="timeline.html">My History</a>
+                            </li>
+                            <li>
+                                <a href="leave.html">Request Leave</a>
+                            </li>
+							<li>
+                                <a href="appraisal.html">Performance Appraisal</a>
+                            </li>
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+					<li>
+                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Analytics<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="flot.html">Team</a>
+                            </li>
+                            <li>
+                                <a href="morris.html">Individual</a>
+                            </li>
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+					<li>
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i>Manage Employees<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="forms.html">New Employee</a>
+                            </li>
+							<li>
+                                <a href="forms3.html">Update Employee</a>
+                            </li>
+                            <li>
+                                <a href="forms2.html">Terminate Employee</a>
+                            </li>
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+                                      
+                    <li>
+                        <a href="#"><i class="fa fa-files-o fa-fw"></i>Sample Pages<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="blank.html">Blank Page</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Login Page</a>
+                            </li>
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+                </ul>
+                <!-- end side-menu -->
+            </div>
+            <!-- end sidebar-collapse -->
+        </nav>
+        <!-- end navbar side -->
+        <!--  page-wrapper -->
+        <div id="page-wrapper">
+
+            
+            <div class="row">
+                 <!--  page header -->
+                <div class="col-lg-12">
+                    <h1 class="page-header">Employee Records</h1>
+                </div>
+                 <!-- end  page header -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             Records
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+										    <th>Employee ID</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+											<th>Position</th>
+                                            <th>Department</th>
+											<th>Manager</th>
+                                            <th>Phone No.</th>
+											<th>Email</th>
+											<th>Salary</th>
+											<th>Availability</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr> 
+										    <td>1</td>
+                                            <td>Carl</td>
+                                            <td>Schmidt</td>
+                                            <td>CEO</td>
+											<td>Executive</td>
+                                            <td> </td>
+                                            <td>425-092-0101</td>
+										    <td>carl@gmail.com</td>
+                                            <td>$300,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										 <tr>
+										    <td>2</td>
+                                            <td>Steven</td>
+                                            <td>McFadden</td>
+                                            <td>COO</td>
+											<td>Executive</td>
+                                            <td>Carl Schmidt</td>
+                                            <td>425-092-0111</td>
+										    <td>steven@gmail.com</td>
+                                            <td>$290,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>3</td>
+                                            <td>Bob</td>
+                                            <td>Smith</td>
+                                            <td>Production Manager</td>
+											<td>Production</td>
+                                            <td>Steven McFadden</td>
+                                            <td>425-089-1111</td>
+										    <td>bobsmith@gmail.com</td>
+                                            <td>$150,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>4</td>
+                                            <td>Jim</td>
+                                            <td>Specter</td>
+                                            <td>Production Worker</td>
+											<td>Manufacturing</td>
+                                            <td>Jared Kush</td>
+                                            <td>425-122-0522</td>
+										    <td>jimspecter@gmail.com</td>
+                                            <td>$70,000</td>
+                                            <td>MWF</td>
+                                        </tr>
+										<tr>
+										    <td>5</td>
+                                            <td>Farra</td>
+                                            <td>Sims</td>
+                                            <td>Secretary</td>
+											<td>Administration</td>
+                                            <td>Carl Schmidt</td>
+                                            <td>425-022-0112</td>
+										    <td>farra@gmail.com</td>
+                                            <td>$90,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>6</td>
+                                            <td>Harry</td>
+                                            <td>Gandhi</td>
+                                            <td>Sales & Marketing Manager</td>
+											<td>Sales & Marketing</td>
+                                            <td>Steven McFadden</td>
+                                            <td>425-192-5118</td>
+										    <td>harry@gmail.com</td>
+                                            <td>$96,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>7</td>
+                                            <td>Jillian</td>
+                                            <td>Sparks</td>
+                                            <td>Production Worker</td>
+											<td>Manufacturing</td>
+                                            <td>Jared Kush</td>
+                                            <td>425-122-2512</td>
+										    <td>jillian@gmail.com</td>
+                                            <td>$70,000</td>
+                                            <td>TTh</td>
+                                        </tr>
+										<tr>
+										    <td>8</td>
+                                            <td>Jamal</td>
+                                            <td>Thomas</td>
+                                            <td>Production Worker</td>
+											<td>Manufacturing</td>
+                                            <td>Jared Kush</td>
+                                            <td>425-112-7522</td>
+										    <td>jamal@gmail.com</td>
+                                            <td>$70,000</td>
+                                            <td>Weekends</td>
+                                        </tr>
+										<tr>
+										    <td>9</td>
+                                            <td>Rose</td>
+                                            <td>Carter</td>
+                                            <td>Production Worker</td>
+											<td>Manufacturing</td>
+                                            <td>Jared Kush</td>
+                                            <td>425-122-0145</td>
+										    <td>rosecarter@gmail.com</td>
+                                            <td>$70,000</td>
+                                            <td>WThF</td>
+                                        </tr>
+										<tr>
+										    <td>10</td>
+                                            <td>Jimmy</td>
+                                            <td>Kimmel</td>
+                                            <td>Production Worker</td>
+											<td>Manufacturing</td>
+                                            <td>Jared Kush</td>
+                                            <td>425-182-1234</td>
+										    <td>jimmykimmel@gmail.com</td>
+                                            <td>$70,000</td>
+                                            <td>MWF</td>
+                                        </tr>
+										<tr>
+										    <td>11</td>
+                                            <td>Yohann</td>
+                                            <td>Blake</td>
+                                            <td>Parts Lead</td>
+											<td>Parts</td>
+                                            <td>Bob Smith</td>
+                                            <td>427-122-0122</td>
+										    <td>yohann@gmail.com</td>
+                                            <td>$95,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>12</td>
+                                            <td>Carmel</td>
+                                            <td>Da-Shantea</td>
+                                            <td>Shipping & Receiving Coordinator</td>
+											<td>Shipping & Receiving</td>
+                                            <td>Bob Smith</td>
+                                            <td>485-132-0322</td>
+										    <td>carmel@gmail.com</td>
+                                            <td>$80,000</td>
+                                            <td>MWF</td>
+                                        </tr>
+										<tr>
+										    <td>13</td>
+                                            <td>Leesa</td>
+                                            <td>Anne</td>
+                                            <td>Service Lead</td>
+											<td>Service</td>
+                                            <td>Bob Smith</td>
+                                            <td>425-182-0509</td>
+										    <td>leesa@gmail.com</td>
+                                            <td>$84,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>14</td>
+                                            <td>Mark</td>
+                                            <td>Kaylin</td>
+                                            <td>Senior Engineer</td>
+											<td>Design & Engineering</td>
+                                            <td>Bob Smith</td>
+                                            <td>428-182-0519</td>
+										    <td>mark@gmail.com</td>
+                                            <td>$100,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>16</td>
+                                            <td>Susan</td>
+                                            <td>Brown</td>
+                                            <td>Engineer</td>
+											<td>Design & Engineering</td>
+                                            <td>Mark Kaylinh</td>
+                                            <td>428-182-0112</td>
+										    <td>susan@gmail.com</td>
+                                            <td>$90,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>17</td>
+                                            <td>Jared</td>
+                                            <td>Kush</td>
+                                            <td>Production Supervisor</td>
+											<td>Manufacturing</td>
+                                            <td>Bob Smith</td>
+                                            <td>528-122-0519</td>
+										    <td>jkush@gmail.com</td>
+                                            <td>$89,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+										<tr>
+										    <td>18</td>
+                                            <td>Isabell</td>
+                                            <td>Jioia</td>
+                                            <td>Secretary</td>
+											<td>Administration</td>
+                                            <td>Steven McFadden</td>
+                                            <td>428-122-0349</td>
+										    <td>isabell@gmail.com</td>
+                                            <td>$74,000</td>
+                                            <td>Weekdays</td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+        </div>
+        <!-- end page-wrapper -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable();
+        });
+    </script>
+
+</body>
+
+</html>
